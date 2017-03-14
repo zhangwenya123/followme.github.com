@@ -1,0 +1,24 @@
+.photo(@diy){
+    background-image: url("../diy/@{diy}");
+    background-repeat: no-repeat;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}    
+.bg-image(@url,@page){
+    background-image: url("images/@{page}/@{url}");
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+
+.content-slide{
+	.wc_maintext{
+		font-size: 24px;
+		color:#FFFFFF;
+        line-height: 45px;
+        text-align: center;
+        z-index: 15;
+	}
+}

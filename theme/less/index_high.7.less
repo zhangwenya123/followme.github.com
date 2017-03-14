@@ -1,0 +1,30 @@
+
+.content-slide-7{
+	.bg-image-1{
+		.bg-image("bg.png","8");
+		z-index: 5;
+	}
+	.bg-image-2{
+		.bg-image("bg1.png","8");
+		height: 501px;
+		top: 250px;
+		._br-animation(img-move 12s both);
+		._br-keyframes(img-move);
+		.-frames(@-...){
+			0%{
+				@{-}transform:translate(-80px,0);
+			}
+			100%{
+				@{-}transform:translate(40px,0);
+			}
+		}
+	}
+	.button{
+		.bg-image("button.png","8");
+		z-index: 10;
+		width: 173px;
+		height: 68px;
+		top: 812px;
+		left: 236px;
+	}
+}
